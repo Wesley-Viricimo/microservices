@@ -1,4 +1,4 @@
-package com.wesley.proposta_app.entity;
+package org.wesley.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

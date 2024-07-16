@@ -1,4 +1,4 @@
-package com.wesley.proposta_app.dto;
+package org.wesley.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class PropostaResponseDTO {
-
-    private Long id;
+public class PropostaRequestDTO {
 
     private String nome;
 
@@ -26,8 +24,4 @@ public class PropostaResponseDTO {
     private Double valorSolicitado;
 
     private int prazoPagamento;
-
-    private Boolean aprovado;
-
-    private String observacao;
 }

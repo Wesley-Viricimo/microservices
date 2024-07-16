@@ -1,4 +1,4 @@
-package com.wesley.proposta_app;
+package org.wesley;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

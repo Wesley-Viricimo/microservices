@@ -1,9 +1,9 @@
-package com.wesley.proposta_app.mapper;
+package org.wesley.mapper;
 
-import com.wesley.proposta_app.dto.PropostaRequestDTO;
-import com.wesley.proposta_app.entity.Proposta;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.wesley.dto.PropostaRequestDTO;
+import org.wesley.entity.Proposta;
 
 @Mapper
 public interface PropostaMapper {

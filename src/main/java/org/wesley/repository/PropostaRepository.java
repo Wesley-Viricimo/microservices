@@ -1,8 +1,9 @@
-package com.wesley.proposta_app.repository;
+package org.wesley.repository;
 
-import com.wesley.proposta_app.entity.Proposta;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import org.wesley.entity.Proposta;
 
 @Repository
 public interface PropostaRepository extends JpaRepository<Proposta, Long> {

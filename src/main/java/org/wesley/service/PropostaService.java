@@ -1,11 +1,12 @@
-package com.wesley.proposta_app.service;
+package org.wesley.service;
 
-import com.wesley.proposta_app.dto.PropostaRequestDTO;
-import com.wesley.proposta_app.dto.PropostaResponseDTO;
-import com.wesley.proposta_app.entity.Proposta;
-import com.wesley.proposta_app.repository.PropostaRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.wesley.dto.PropostaRequestDTO;
+import org.wesley.dto.PropostaResponseDTO;
+import org.wesley.entity.Proposta;
+import org.wesley.repository.PropostaRepository;
 
 @Service
 public class PropostaService {
