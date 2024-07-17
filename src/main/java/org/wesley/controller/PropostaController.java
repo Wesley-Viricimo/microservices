@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.wesley.dto.PropostaRequestDTO;
 import org.wesley.dto.PropostaResponseDTO;
 import org.wesley.service.PropostaService;
@@ -21,6 +22,11 @@ public class PropostaController {
     @PostMapping
     public ResponseEntity<PropostaResponseDTO> criar(@RequestBody PropostaRequestDTO requestDTO) {
         PropostaResponseDTO response = propostaService.criar(requestDTO);
-        return ResponseEntity.ok().body(response);
+        return ResponseEntity.created(
+                ServletUriComponentsBuilder.fromCurrentRequest()
+                        .path("/{id}")
+                        .buildAndExpand(response.getId())
+                        .toUri())               //Implementação que retornará no location do header da resposta da requisição uma url para acessar a proposta que foi criada
+                .body(response);
     }
 }
