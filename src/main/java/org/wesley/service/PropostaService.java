@@ -9,6 +9,8 @@ import org.wesley.entity.Proposta;
 import org.wesley.mapper.PropostaMapper;
 import org.wesley.repository.PropostaRepository;
 
+import java.util.List;
+
 @Service
 public class PropostaService {
 
@@ -21,5 +23,9 @@ public class PropostaService {
        propostaRepository.save(proposta);
 
        return PropostaMapper.INSTANCE.converteEntityToDto(proposta);
+    }
+
+    public List<PropostaResponseDTO> obterPropostas() {
+        return PropostaMapper.INSTANCE.convertListEntityToListDto(propostaRepository.findAll());
     }
 }

@@ -7,6 +7,8 @@ import org.wesley.dto.PropostaRequestDTO;
 import org.wesley.dto.PropostaResponseDTO;
 import org.wesley.entity.Proposta;
 
+import java.util.List;
+
 @Mapper
 public interface PropostaMapper {
 
@@ -29,4 +31,6 @@ public interface PropostaMapper {
     @Mapping(target = "cpf", source = "usuario.cpf")
     @Mapping(target = "renda", source = "usuario.renda")
     PropostaResponseDTO converteEntityToDto(Proposta proposta);
+
+    List<PropostaResponseDTO> convertListEntityToListDto(Iterable<Proposta> propostas);
 }
