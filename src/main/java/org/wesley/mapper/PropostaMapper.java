@@ -31,7 +31,7 @@ public interface PropostaMapper {
     @Mapping(target = "telefone", source = "usuario.telefone")
     @Mapping(target = "cpf", source = "usuario.cpf")
     @Mapping(target = "renda", source = "usuario.renda")
-    @Mapping(target = "valorSolicitado", expression = "java(setValorSolicitadoFmt(proposta))")
+    @Mapping(target = "valorSolicitadoFmt", expression = "java(setValorSolicitadoFmt(proposta))")
     PropostaResponseDTO converteEntityToDto(Proposta proposta);
 
     List<PropostaResponseDTO> convertListEntityToListDto(Iterable<Proposta> propostas);
