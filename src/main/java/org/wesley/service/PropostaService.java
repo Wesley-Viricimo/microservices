@@ -2,6 +2,7 @@ package org.wesley.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.wesley.dto.PropostaRequestDTO;
 import org.wesley.dto.PropostaResponseDTO;
@@ -19,6 +20,9 @@ public class PropostaService {
 
     @Autowired
     private NotificacaoService notificacaoService;
+
+    @Value("${rabbitmq.propostapendente.exchange}")
+    private String exchange;
 
     public PropostaResponseDTO criar(PropostaRequestDTO requestDTO) {
 
