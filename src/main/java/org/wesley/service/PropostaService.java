@@ -19,7 +19,7 @@ public class PropostaService {
     private PropostaRepository propostaRepository;
 
     @Autowired
-    private NotificacaoService notificacaoService;
+    private NotificacaoRabbitService notificacaoService;
 
     @Value("${rabbitmq.propostapendente.exchange}")
     private String exchange;
