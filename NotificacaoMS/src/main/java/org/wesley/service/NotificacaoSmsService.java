@@ -6,7 +6,7 @@ import org.wesley.domain.Proposta;
 @Service
 public class NotificacaoSmsService {
 
-    public void notificar(String mensagem) {
+    public void notificar(String telefone, String mensagem) {
 
     }
 }

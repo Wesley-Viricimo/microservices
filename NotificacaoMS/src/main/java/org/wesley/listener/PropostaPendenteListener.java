@@ -14,6 +14,6 @@ public class PropostaPendenteListener {
     @RabbitListener(queues = "${rabbitmq.queue.proposta.pendente}") //Configuração para que o método seja um ouvinte da fila do nome informado
     public void propostaPendente(Proposta proposta) {
         String mensagem = String.format(MensagemConstante.PROPOSTA_EM_ANALISE, proposta.getUsuario().getNome());
-        notificacaoSmsService.notificar(mensagem);
+        notificacaoSmsService.notificar(proposta.getUsuario().getTelefone(), mensagem);
     }
 }
