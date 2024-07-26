@@ -1,5 +1,6 @@
 package org.wesley.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -16,6 +17,7 @@ public class Usuario {
     private Double renda;
 
     @OneToOne(mappedBy = "usuario") //Informando que o mapeamento foi feito no atributo usuário da entidade proposta
+    @JsonBackReference
     private Proposta proposta;
 
     public Usuario() {

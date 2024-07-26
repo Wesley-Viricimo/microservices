@@ -1,5 +1,6 @@
 package org.wesley.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -17,6 +18,7 @@ public class Proposta {
 
     @OneToOne(cascade = CascadeType.PERSIST) //Faz com que ao salvar uma proposta, o usuário seja salvo também
     @JoinColumn(name = "id_usuario") //Deve ser informado o que será salvo na coluna usuario, neste caso será salvo o id, para referenciar a qual usuário a proposta faz referência
+    @JsonManagedReference
     private Usuario usuario;
 
     public Proposta() {}
