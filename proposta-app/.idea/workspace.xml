@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc9e9f82-cff9-4801-b303-5747f5aafa77" name="Changes" comment="" />
+    <list default="true" id="7328dce9-3dc1-462e-9f8c-d546ede2ec27" name="Changes" comment="Ajustando entidades usuario e proposta" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,20 +20,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2jKKUOiSjDWZF2oU7iPvVvDpYYc" />
+  <component name="ProjectId" id="2jLXjVGCCquV0210nAfQf1I8ykE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -46,21 +35,35 @@
   "keyToString": {
     "Application.PropostaAppApplication.executor": "Run",
     "Maven.proposta-app [compile].executor": "Run",
-    "Maven.proposta-app [test].executor": "Run",
+    "Maven.proposta-app [validate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/wesle/OneDrive/Área de Trabalho/Projetos/proposta/proposta-app"
+    "last_opened_file_path": "C:/Users/wesle/OneDrive/Área de Trabalho/Projetos/Microservices/proposta-app"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wesle\OneDrive\Área de Trabalho\Projetos\proposta-app\src\main\resources" />
+      <recent name="C:\Users\wesle\OneDrive\Área de Trabalho\Projetos\proposta-app\src\main\java\org\wesley\entity" />
+      <recent name="C:\Users\wesle\OneDrive\Área de Trabalho\Projetos\proposta-app\src\main\java\org\wesley\dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.wesley.service" />
+      <recent name="org.wesley.repository" />
+      <recent name="org.wesley.mapper" />
+      <recent name="org.wesley.controller" />
+      <recent name="org.wesley" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="PropostaAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wesley.proposta_app.PropostaAppApplication" />
+    <configuration name="PropostaAppApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.wesley.PropostaAppApplication" />
       <module name="proposta-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wesley.proposta_app.*" />
+          <option name="PATTERN" value="org.wesley.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,11 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.PropostaAppApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -84,24 +82,158 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc9e9f82-cff9-4801-b303-5747f5aafa77" name="Changes" comment="" />
-      <created>1721130343844</created>
+      <changelist id="7328dce9-3dc1-462e-9f8c-d546ede2ec27" name="Changes" comment="" />
+      <created>1721167468066</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721130343844</updated>
+      <updated>1721167468066</updated>
     </task>
+    <task id="LOCAL-00001" summary="Configurando cors">
+      <option name="closed" value="true" />
+      <created>1721259472928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721259472928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Convertendo valor solicitado para String e formatando o valor para moeda">
+      <option name="closed" value="true" />
+      <created>1721260440717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721260440717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adicionando configuração para rabbitMQ e ajustando mapeamento de entidade para DTO">
+      <option name="closed" value="true" />
+      <created>1721824216210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721824216210</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adicionando dependência para criação de mensageria">
+      <option name="closed" value="true" />
+      <created>1721824549650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721824549650</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Criando filas utilizando RabbitMQ">
+      <option name="closed" value="true" />
+      <created>1721825020842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721825020842</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finalizando criação das filas utilizando RabbitMQ">
+      <option name="closed" value="true" />
+      <created>1721825673692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721825673692</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Criando exchange responsável por distribuir as mensagens para serviço de notificação e análise de crédito">
+      <option name="closed" value="true" />
+      <created>1721826325593</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721826325593</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Criando RabbitTemplate para configuração do rabbitMQ">
+      <option name="closed" value="true" />
+      <created>1721874060214</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721874060214</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Configurando exchange com application.properties">
+      <option name="closed" value="true" />
+      <created>1721913889372</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721913889372</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implementando tratativas para propostas não integradas">
+      <option name="closed" value="true" />
+      <created>1721914426166</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721914426166</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ajustando mapeamento para a coluna integrada iniciar com valor true e mude para false caso não consiga conexão ao rabbitMQ">
+      <option name="closed" value="true" />
+      <created>1721914766797</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721914766797</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Implementando rotina para reenvio de propostas não integradas">
+      <option name="closed" value="true" />
+      <created>1721915483704</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721915483704</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finalizando implementação do Scheduled para processamento das propostas não integradas">
+      <option name="closed" value="true" />
+      <created>1721916104416</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721916104416</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Ajustando entidades usuario e proposta">
+      <option name="closed" value="true" />
+      <created>1721958852331</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721958852331</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
-    <option featureType="dependencySupport" implementationName="executable:docker" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="executable:kubectl" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
-    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Configurando cors" />
+    <MESSAGE value="Convertendo valor solicitado para String e formatando o valor para moeda" />
+    <MESSAGE value="Adicionando configuração para rabbitMQ e ajustando mapeamento de entidade para DTO" />
+    <MESSAGE value="Adicionando dependência para criação de mensageria" />
+    <MESSAGE value="Criando filas utilizando RabbitMQ" />
+    <MESSAGE value="Finalizando criação das filas utilizando RabbitMQ" />
+    <MESSAGE value="Criando exchange responsável por distribuir as mensagens para serviço de notificação e análise de crédito" />
+    <MESSAGE value="Criando RabbitTemplate para configuração do rabbitMQ" />
+    <MESSAGE value="Configurando exchange com application.properties" />
+    <MESSAGE value="Implementando tratativas para propostas não integradas" />
+    <MESSAGE value="Ajustando mapeamento para a coluna integrada iniciar com valor true e mude para false caso não consiga conexão ao rabbitMQ" />
+    <MESSAGE value="Implementando rotina para reenvio de propostas não integradas" />
+    <MESSAGE value="Finalizando implementação do Scheduled para processamento das propostas não integradas" />
+    <MESSAGE value="Ajustando entidades usuario e proposta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustando entidades usuario e proposta" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/target/generated-sources/annotations/org/wesley/mapper/PropostaMapperImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/proposta_app$PropostaAppApplication.ic" NAME="PropostaAppApplication Coverage Results" MODIFIED="1721261096040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.wesley.*</FILTER>
+    </SUITE>
   </component>
 </project>
