@@ -28,7 +28,7 @@ public class AmazonSmsConfiguration {
     public AmazonSNS amazonSNS() {
         return AmazonSNSClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials()))
-                .withRegion(Regions.US_EAST_1)
+                .withRegion(Regions.SA_EAST_1)
                 .build();
     }
 }

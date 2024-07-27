@@ -1,6 +1,7 @@
 package org.wesley.listener;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.wesley.constants.MensagemConstante;
 import org.wesley.domain.Proposta;
@@ -9,6 +10,7 @@ import org.wesley.service.NotificacaoSmsService;
 @Component
 public class PropostaPendenteListener {
 
+    @Autowired
     private NotificacaoSmsService notificacaoSmsService;
 
     @RabbitListener(queues = "${rabbitmq.queue.proposta.pendente}") //Configuração para que o método seja um ouvinte da fila do nome informado
