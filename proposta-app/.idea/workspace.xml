@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7328dce9-3dc1-462e-9f8c-d546ede2ec27" name="Changes" comment="Ajustando entidades usuario e proposta">
-      <change beforePath="$PROJECT_DIR$/../NotificacaoMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NotificacaoMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/config/AmazonSmsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/config/AmazonSmsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/listener/PropostaPendenteListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/listener/PropostaPendenteListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/service/NotificacaoSmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NotificacaoMS/src/main/java/org/wesley/service/NotificacaoSmsService.java" afterDir="false" />
-    </list>
+    <list default="true" id="7328dce9-3dc1-462e-9f8c-d546ede2ec27" name="Changes" comment="Ajustando entidades usuario e proposta" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

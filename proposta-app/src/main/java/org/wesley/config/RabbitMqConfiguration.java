@@ -16,7 +16,10 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMqConfiguration {
 
     @Value("${rabbitmq.propostapendente.exchange}")
-    private String exchange;
+    private String exchangePropostaPendente;
+
+    @Value("${rabbitmq.propostaconcluida.exchange}")
+    private String exchangePropostaConcluida;
 
     @Bean
     public Queue criarFilaPropostaPendenteMsAnaliseCredito() {
@@ -50,7 +53,12 @@ public class RabbitMqConfiguration {
 
     @Bean
     public FanoutExchange criarFanoutExchangePropostaPendente() { //Criando exchange responsável por distribuir as mensagens para o microserviço de análise de crédito e para o microserviço de notificação
-        return ExchangeBuilder.fanoutExchange(exchange).build();
+        return ExchangeBuilder.fanoutExchange(exchangePropostaPendente).build();
+    }
+
+    @Bean
+    public FanoutExchange criarFanoutExchangePropostaConcluida() { //Criando exchange responsável por distribuir as mensagens para o microserviço de análise de crédito e para o microserviço de notificação
+        return ExchangeBuilder.fanoutExchange(exchangePropostaConcluida).build();
     }
 
     @Bean
@@ -60,9 +68,21 @@ public class RabbitMqConfiguration {
     }
 
     @Bean
+    public Binding criarBindingPropostaConcluidaMsPropostaApp() {
+        return BindingBuilder.bind(criarFilaPropostaConcluidaMsProposta())
+                .to(criarFanoutExchangePropostaConcluida());
+    }
+
+    @Bean
     public Binding criarBindingPropostaPendenteMsNotificacao() {
         return BindingBuilder.bind(criarFilaPropostaPendenteMsNotificacao())
                 .to(criarFanoutExchangePropostaPendente());
+    }
+
+    @Bean
+    public Binding criarBindingPropostaConcluidaMsNotificacao() {
+        return BindingBuilder.bind(criarFilaPropostaConcluidaMsNotificacao())
+                .to(criarFanoutExchangePropostaConcluida());
     }
 
     @Bean
