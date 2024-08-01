@@ -31,18 +31,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.PropostaAppApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.proposta-app [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.proposta-app [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wesle/OneDrive/Área de Trabalho/Projetos/Microservices/proposta-app&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PropostaAppApplication.executor": "Run",
+    "Maven.proposta-app [compile].executor": "Run",
+    "Maven.proposta-app [validate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/wesle/OneDrive/Área de Trabalho/Projetos/Microservices/NotificacaoMS"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wesle\OneDrive\Área de Trabalho\Projetos\proposta-app\src\main\resources" />
